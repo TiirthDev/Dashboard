@@ -11,6 +11,7 @@ import Chat from "./Chat";
 import Notification from "./Notification";
 import UserProfile from "./UserProfile";
 import { useStateContext } from "../contexts/ContextProvider";
+import avatar from "../data/avatar.jpg";
 
 const Navbar = () => {
   const {
@@ -111,7 +112,7 @@ const Navbar = () => {
           >
             <img
               className="rounded-full w-8 h-8"
-              src="https://material-kit-pro-react.devias.io/static/mock-images/avatars/avatar-carson_darrin.png"
+              src={avatar}
               alt="user-profile"
             />
             <p>
@@ -134,3 +135,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
